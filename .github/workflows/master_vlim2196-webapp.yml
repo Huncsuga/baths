@@ -30,7 +30,6 @@ jobs:
       - name: Install dependencies
         run: |
           cd flask_example
-          ls
           pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
