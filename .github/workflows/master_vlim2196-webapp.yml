@@ -26,12 +26,9 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-
+      
       - name: Install dependencies
-        run: |
-          cd flask_example
-          ls
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -69,4 +66,4 @@ jobs:
         with:
           app-name: 'vlim2196-webapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_764A83F4D5AA418182728921C4613313 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E9DCBDC170F450F8EDA8798D478CCF8 }}
